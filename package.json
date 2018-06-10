@@ -1,0 +1,22 @@
+{
+  "name": "experiment",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@lasso/marko-taglib": "^1.0.10",
+    "compression": "^1.7.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "lasso": "^3.1.5",
+    "lasso-babel-transform": "^1.0.2",
+    "lasso-marko": "^2.4.2",
+    "marko": "^4.10.0",
+    "morgan": "~1.9.0"
+  }
+}
