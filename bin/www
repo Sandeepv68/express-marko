@@ -21,7 +21,7 @@ const server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port, ()=>{
+server.listen(port, () => {
   log.info(`Application started and is running on port ${port}`);
 });
 server.on('error', onError);
@@ -55,11 +55,13 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+  var bind = typeof port === 'string' ?
+    'Pipe ' + port :
+    'Port ' + port;
 
-  // handle specific listen errors with friendly messages
+  /**
+   * handle specific listen errors with friendly messages
+   */
   switch (error.code) {
     case 'EACCES':
       log.error(bind + ' requires elevated privileges');
@@ -79,8 +81,8 @@ function onError(error) {
  */
 function onListening() {
   var addr = server.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+  var bind = typeof addr === 'string' ?
+    'pipe ' + addr :
+    'port ' + addr.port;
   debug('Listening on ' + bind);
 }

@@ -16,6 +16,7 @@
     "lasso-babel-transform": "^1.0.2",
     "lasso-marko": "^2.4.2",
     "marko": "^4.10.0",
+    "morgan": "^1.9.0",
     "pino": "^4.17.3"
   },
   "devDependencies": {
