@@ -18,5 +18,8 @@
     "lasso-marko": "^2.4.2",
     "marko": "^4.10.0",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
   }
 }

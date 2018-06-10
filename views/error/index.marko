@@ -7,11 +7,13 @@
     <lasso-head/>
   </head>
   <body>
-    <h1>${input.message}</h1>
-    <h2>${input.status}</h2>
-    <pre>
+    <div class="container">
+      <!-- Page Content goes here -->
+      <h1>${input.message}</h1>
+      <h2>${input.status}</h2>
+      <pre>
     ${input.stack}</pre>
-    <!-- Top-level UI component: -->
+    </div>
     <!-- JS includes -->
     <lasso-body/>
   </body>
