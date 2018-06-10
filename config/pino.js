@@ -68,7 +68,7 @@ const pinoConfig = {
      * prettyPrint (boolean|object): enables pino.pretty. This is intended for non-production configurations.
      * This may be set to a configuration object as outlined in pino.pretty. Default: false.
      */
-    prettyPrint: false,
+    prettyPrint: true,
 
     /**
      * onTerminated (function): this function will be invoked during process shutdown when extreme is set to true.
