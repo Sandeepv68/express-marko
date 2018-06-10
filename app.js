@@ -79,8 +79,8 @@ app.use(function (req, res, next) {
 });
 
 /**
-* error handler
-*/
+ * error handler
+ */
 app.use(function (err, req, res, next) {
   /**
    * set locals, only providing error in development
@@ -88,9 +88,9 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
   let errorData = {
-      status: err.status || 500,
-      message: err.message,
-      stack: err.stack
+    status: err.status || 500,
+    message: err.message,
+    stack: err.stack
   };
   /**
    * render the error page
