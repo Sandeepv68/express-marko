@@ -26,7 +26,7 @@ const server = http.createServer(app);
  */
 
 server.listen(port, ()=>{
-  console.log(`Application started and is running on port ${port}`);
+  log.info(`Application started and is running on port ${port}`);
 });
 server.on('error', onError);
 server.on('listening', onListening);
