@@ -2,18 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Express Marko</title>
+    <title>Express Marko Error</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- CSS includes -->
     <lasso-head/>
   </head>
   <body>
-    <div class="container">
-      <!-- Page Content goes here -->
-      <h1>${input.message}</h1>
-      <h2>${input.status}</h2>
-      <pre>
-    ${input.stack}</pre>
-    </div>
+    <!-- Page Content goes here -->
+    <h2>${input.message}</h2>
+    <h2>${input.status}</h2>
+    <code><pre>${input.stack}</pre></code>
     <!-- JS includes -->
     <lasso-body/>
   </body>

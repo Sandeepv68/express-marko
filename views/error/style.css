@@ -1,1 +1,9 @@
 /*Custom styles goes here*/
+h2{
+    color: #e40606;
+}
+pre{
+    background: #ffecec;
+    color: #8b0202;
+    padding: 10px;
+}
