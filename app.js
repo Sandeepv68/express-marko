@@ -20,7 +20,7 @@ global.log = log;
  * Set up the routes
  */
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const apiRouter = require('./routes/api');
 
 /**
  * Lassojs Configuration
@@ -32,6 +32,10 @@ lasso.configure(require('./config/lasso'));
  */
 const app = express();
 
+/**
+ * disable x-powered-by
+ */
+app.disable('x-powered-by');
 /**
  * enable res.marko(template, data)
  */
@@ -58,12 +62,14 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Custom Middleware
  */
 app.use(require('./middlewares'));
+log.info('Application middlewares initialized');
 
 /**
  * Set the app to use the routes
  */
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/api', apiRouter);
+log.info('Application routes initialized');
 
 /**
  * catch 404 and forward to error handler
