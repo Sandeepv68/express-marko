@@ -14,7 +14,7 @@ Express Marko Starter kit contains an Express sample application combined with M
 * [Installation](#installation)
 * [Dependency](#dependency)
 * [Changelog](#changelog)
-    * [v1](#v301)
+    * [v1](#v1)
 <!--te-->
 
 ## Installation
@@ -31,6 +31,18 @@ and then you will see your app running with logs on your terminal
 [2018-06-11T08:02:16.480Z] INFO (Express Marko/8248 on Sandeep-HP): Application routes initialized
 [2018-06-11T08:02:16.487Z] INFO (Express Marko/8248 on Sandeep-HP): Application started and is running on port 3000
 ```
+## Dependency
+- @lasso/marko-taglib
+- compression
+- cookie-parser
+- debug
+- express
+- http-errors
+- lasso
+- lasso-babel-transform
+- lasso-marko
+- marko
+- pino
 
 ## Changelog
 ### v1
