@@ -1,1 +1,2 @@
+# bin
 This folder contains the ```server.js``` file which imports the express app object and spins up the server using the ```http``` module. It also adds the ```debug``` module for deugging the express app.
