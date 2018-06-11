@@ -4,6 +4,6 @@ This folder contains the Marko components. Marko makes it easy to create UI comp
 ## Component structure
 Marko makes it easy to to co-locate your component's class and styles with the HTML view that they correspond to. The following are the key part of any UI component:
 
-- _View_ - The HTML template for your UI component. Receives input properties and states and renders to either HTML (server-side) or virtual DOM nodes (browser-side)
-- _Client-side behavior_ - Implemented as a JavaScript class with methods and properties to provide initialization, event handling (including DOM events, custom events and lifecycle events) and state management
-- _Styling_ - Cascading StyleSheet with support for CSS preprocessors such as Less or Sass
+- **View** - The HTML template for your UI component. Receives input properties and states and renders to either HTML (server-side) or virtual DOM nodes (browser-side)
+- **Client-side behavior** - Implemented as a JavaScript class with methods and properties to provide initialization, event handling (including DOM events, custom events and lifecycle events) and state management
+- **Styling** - Cascading StyleSheet with support for CSS preprocessors such as Less or Sass
