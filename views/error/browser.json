@@ -1,5 +1,6 @@
 {
     "dependencies": [
+        "../../public/css/materialize.css",
         "./style.css"
     ]
 }
