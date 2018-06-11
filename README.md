@@ -32,6 +32,7 @@ and then you will see your app running with logs on your terminal
 [2018-06-11T08:02:16.487Z] INFO (Express Marko/8248 on Sandeep-HP): Application started and is running on port 3000
 ```
 ## Dependency
+This project uses the following modules as dependency
 - @lasso/marko-taglib
 - compression
 - cookie-parser
@@ -43,6 +44,7 @@ and then you will see your app running with logs on your terminal
 - lasso-marko
 - marko
 - pino
+- babel-preset-env
 
 ## Changelog
 ### v1
