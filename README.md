@@ -22,7 +22,14 @@ Express Marko Starter kit contains an Express sample application combined with M
 ## Installation
 Download the package from
 ```https://github.com/SandeepVattapparambil/express-marko.git```
-then ```cd <into-project-folder>```
+then ```cd <into-project-folder>``` and
 ```sh
 npm i
+npm start
+```
+and then you will see your app running with logs on your terminal
+```sh
+[2018-06-11T08:02:16.474Z] INFO (Express Marko/8248 on Sandeep-HP): Application middlewares initialized
+[2018-06-11T08:02:16.480Z] INFO (Express Marko/8248 on Sandeep-HP): Application routes initialized
+[2018-06-11T08:02:16.487Z] INFO (Express Marko/8248 on Sandeep-HP): Application started and is running on port 3000
 ```
