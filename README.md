@@ -34,6 +34,7 @@ and then you will see your app running with logs on your terminal
 ## Dependency
 This project uses the following modules as dependency
 - @lasso/marko-taglib
+    The Lasso.js includes a taglib for Marko for easily injecting <script> and <link> tags into a page, as well as resource URLs for images and other types of front-end resources.
 - compression
 - cookie-parser
 - debug
