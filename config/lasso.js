@@ -1,3 +1,6 @@
+/**
+ * Lasso loader configuration
+ */
 const lassoConfig = {
     plugins: [
         'lasso-marko' // Allow Marko templates to be compiled and transported to the browser

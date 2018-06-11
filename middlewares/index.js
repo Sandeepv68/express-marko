@@ -1,3 +1,6 @@
+/**
+ * Custom middlewares can be augmented here
+ */
 const express = require('express');
 const router = express.Router();
 
