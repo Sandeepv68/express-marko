@@ -33,7 +33,7 @@ lasso.configure(require('./config/lasso'));
 const app = express();
 
 /**
- * disable x-powered-by
+ * disable x-powered-by to deceive hackers
  */
 app.disable('x-powered-by');
 /**
@@ -73,6 +73,9 @@ log.info('Application routes initialized');
 
 /**
  * catch 404 and forward to error handler
+ * @param {Object} req - The express request object
+ * @param {Object} res - The express response object
+ * @param {Object} next - The next middleware in the middleware chain
  */
 app.use(function (req, res, next) {
   next(createError(404));
@@ -80,6 +83,10 @@ app.use(function (req, res, next) {
 
 /**
  * error handler
+ * @param {Object} err - The error object
+ * @param {Object} req - The express request object
+ * @param {Object} res - The express response object
+ * @param {Object} next - The next middleware in the middleware chain
  */
 app.use(function (err, req, res, next) {
   /**
