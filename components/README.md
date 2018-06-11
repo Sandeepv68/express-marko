@@ -1,0 +1,9 @@
+# components
+This folder contains the Marko components. Marko makes it easy to create UI component that can be used as building blocks for constructing web pages and web applications of any complexity. Marko promotes creating self-contained UI components that are independently testable and that encapsulate the view, client-side behavior (e.g., event handling) and styling. UI components can easily be combined to create composite UI components. Marko UI components compile into small and efficient JavaScript modules that hide implementation details from outside users. With Marko, the DOM output of a UI component is based on input properties and a UI component may also maintain internal state that is used to control the view. If Marko detects a change to either input or to the internal state then the view (i.e., the DOM) will automatically be updated based on the new input and state. Internally, Marko uses virtual DOM diffing/patching to update the view, but this is an implementation detail that could change at any time.
+
+## Component structure
+Marko makes it easy to to co-locate your component's class and styles with the HTML view that they correspond to. The following are the key part of any UI component:
+
+View - The HTML template for your UI component. Receives input properties and states and renders to either HTML (server-side) or virtual DOM nodes (browser-side)
+Client-side behavior - Implemented as a JavaScript class with methods and properties to provide initialization, event handling (including DOM events, custom events and lifecycle events) and state management
+Styling - Cascading StyleSheet with support for CSS preprocessors such as Less or Sass
