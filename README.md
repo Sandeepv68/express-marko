@@ -12,11 +12,9 @@ Express Marko Starter kit contains an Express sample application combined with M
 <!--ts-->
 * [About](#express-marko-starter-v1)
 * [Installation](#installation)
-* [Sample Usage](#sample-usage)
 * [Dependency](#dependency)
 * [Changelog](#changelog)
-    * [v3.0.1](#v301)
-* [Acknowledgements](#acknowledgements)
+    * [v1](#v301)
 <!--te-->
 
 ## Installation
@@ -33,3 +31,12 @@ and then you will see your app running with logs on your terminal
 [2018-06-11T08:02:16.480Z] INFO (Express Marko/8248 on Sandeep-HP): Application routes initialized
 [2018-06-11T08:02:16.487Z] INFO (Express Marko/8248 on Sandeep-HP): Application started and is running on port 3000
 ```
+
+## Changelog
+### v1
+- Basic application setup
+- Express framework
+- MarkoJS
+- MaterializeCSS
+- LassoJS
+- Pino Logger
