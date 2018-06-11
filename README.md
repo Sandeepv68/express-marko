@@ -36,16 +36,28 @@ This project uses the following modules as dependency
 - @lasso/marko-taglib
     * The Lasso.js includes a taglib for Marko for easily injecting <script> and <link> tags into a page, as well as resource URLs for images and other types of front-end resources.
 - compression
+    * The Nodejs compression middleware for compressing server responses.
 - cookie-parser
+    * Parse Cookie header and populate req.cookies with an object keyed by the cookie names. Optionally you may enable signed cookie support by passing a secret string, which assigns req.secret so it may be used by other middleware.
 - debug
+    * A tiny JavaScript debugging utility modelled after Node.js core's debugging technique. Works in Node.js and web browsers.
 - express
+    * Fast, unopinionated, minimalist web framework for node.
 - http-errors
+    * Create HTTP errors for Express, Koa, Connect, etc. with ease.
 - lasso
+    * Lasso.js is an eBay open source Node.js-style JavaScript module bundler that also provides first-level support for optimally delivering JavaScript, CSS, images and other assets to the browser.
+    This tool offers many different optimizations such as a bundling, code splitting, lazy loading, conditional dependencies, compression and fingerprinted resource URLs. Plugins are provided to support pre-processors and compilers such as Less, Stylus and Marko. This developer-friendly tool does not require that you change the way that you already code and can easily be adopted by existing applications.
 - lasso-babel-transform
+    * Lasso.js transform that uses Babel to transpile ES6 code to ES5.
 - lasso-marko
+    * Plugin for the Lasso.js to support compilation and transport of Marko template files. Templates are compiled using the Marko compiler that produces a CommonJS module as output.
 - marko
+    * Marko is an isomorphic UI library built in JavaScript.
 - pino
+    * Extremely fast node.js logger, inspired by Bunyan. It also includes a shell utility to pretty-print its log files.
 - babel-preset-env
+    * The move makes it much easier to release and develop in sync with the rest of Babel!
 
 ## Changelog
 ### v1
