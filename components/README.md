@@ -6,4 +6,13 @@ Marko makes it easy to to co-locate your component's class and styles with the H
 
 - **View** - The HTML template for your UI component. Receives input properties and states and renders to either HTML (server-side) or virtual DOM nodes (browser-side)
 - **Client-side behavior** - Implemented as a JavaScript class with methods and properties to provide initialization, event handling (including DOM events, custom events and lifecycle events) and state management
-- **Styling** - Cascading StyleSheet with support for CSS preprocessors such as Less or Sass
+- **Styling** - Cascading StyleSheet with support for CSS preprocessors such as Less or Sass.
+
+## Split Components
+Split components allow you to optimize for the case where a component is rendered on the server, but doesn't need to be re-rendered in the browser. Because the component doesn't need to be rendered in the browser, the template does not need to be sent to the browser. This can reduce your page weight by a few hundred bytes in some cases.
+
+> **Note**: If a split component is the child of a stateful component, the full rendering logic will still be sent down because the parent component may pass new input to the split component, requiring it to re-render.
+
+Additionally if all components rendered on a page are split components, Marko's VDOM and rendering runtime is not necessary and therefore not sent to the browser, which can further reduce page weight by a few kilobytes.
+
+> **ProTip**: Don't over-optimize. If your component really doesn't need re-rendering, go ahead and split, but don't forgo stateful re-rendering when it would make your code more maintainable.
